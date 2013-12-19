@@ -1,0 +1,22 @@
+name:           BibliotecaSonoraHaskell
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         Pedro
+
+executable BibliotecaSonoraHaskell
+  hs-source-dirs:  src
+  main-is:         Main.hs
+  build-depends:   base >= 4,
+                    bytestring
+  ghc-options:     -Wall
+  other-modules:   
+                   Sintese.Aditiva.SinteseAditiva,
+                   Sintese.Aditiva.Typedefs,
+                   Sintese.Aditiva,
+                   Definicoes.Audio,
+                   Biblioteca.Typedefs,
+                   Biblioteca.Musica,
+                   Definicoes.Frequencias,
+                   SinteseMusical.SinteseMusical
+
